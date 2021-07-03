@@ -1,7 +1,7 @@
 const request = require('request')
 
 const forecast = (latitude, longitude, callback)=>{
-    const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${latitude},${longitude}?unitGroup=us&key=VF5WM23U5VFWWAW7YFHYPFYM2`
+    const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${latitude},${longitude}?unitGroup=uk&key=VF5WM23U5VFWWAW7YFHYPFYM2`
 
     request({url: url, json: true}, (err, res)=>{
         if (err){
