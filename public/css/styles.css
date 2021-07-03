@@ -1,5 +1,5 @@
 body{
-    color: #333333;
+    color: white;
     font-family: arial;
     max-width: 650px;
     margin: 0 auto;
@@ -7,14 +7,30 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 .main-content{
     flex-grow: 1;
 }
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    /* border: 1px solid red; */
+}
+.right{
+    /* border: 1px solid red; */
+    margin: 20px;
+    padding: 20px;
+}
 
 footer{
-    color: #888888;
+    color: white;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
@@ -31,24 +47,27 @@ h1{
 }
 
 header a {
-    color: #888888;
+    color: white;
     margin-right: 16px;
     text-decoration: none;
 }
 
 .portrait{
     width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 input{
     border: 1px solid #cccccc;
-    padding: 8px;
+    padding: 12px;
+    background-color: white;
+    outline: none;
 }
 
 button{
     cursor: pointer;
     border: 1px solid #888888;
-    background: #888888;
-    color: white;
-    padding: 8px;
+    background-color: rgb(77, 73, 73);
+color: white;
+    padding: 12px;
 }

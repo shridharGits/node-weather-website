@@ -57,12 +57,14 @@ app.get('/weather', (req, res)=>{
                 const latitude = data.latitude
                 const longitude = data.longitude
                 const location = data.location
+                // const icon = da
                 forecast(latitude, longitude, (err, forecast)=>{
                     if (err){
                         return res.send({err})
                     }
                     res.send({
-                        forecast: forecast,
+                        forecast: forecast.forecast,
+                        icon: forecast.icon,
                         location,
                         address: address
                     })
