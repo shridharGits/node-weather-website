@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (e)=>{
             else{
             messageOne.textContent = `${data.location}`
             messageTwo.textContent = `${data.forecast}`
-            icon.innerHTML = `<img src="./icons/${data.icon}.png" alt="hey" width="100px" height="100px">`
+            icon.innerHTML = `<img src="./icons/${data.icon}.png" alt="" width="100px" height="100px">`
             console.log(data.forecast);
             console.log(data.address);
         }
